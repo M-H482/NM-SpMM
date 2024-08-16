@@ -1,0 +1,4 @@
+# plot step-wise performance analysis figure
+# output file: step-wise_performance_analysis.pdf
+
+bash plot.sh 
