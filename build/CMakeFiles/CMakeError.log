@@ -1,0 +1,61 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8abd5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8abd5.dir/build.make CMakeFiles/cmTC_8abd5.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8abd5.dir/src.cxx.o
+/public/software/compiler/gcc/11.2.0/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++11 -o CMakeFiles/cmTC_8abd5.dir/src.cxx.o -c /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8abd5
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8abd5.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/c++ CMakeFiles/cmTC_8abd5.dir/src.cxx.o -o cmTC_8abd5 
+CMakeFiles/cmTC_8abd5.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x2d): undefined reference to `pthread_create'
+src.cxx:(.text+0x39): undefined reference to `pthread_detach'
+src.cxx:(.text+0x45): undefined reference to `pthread_cancel'
+src.cxx:(.text+0x56): undefined reference to `pthread_join'
+src.cxx:(.text+0x6a): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_8abd5] Error 1
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_8abd5/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ef7b6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ef7b6.dir/build.make CMakeFiles/cmTC_ef7b6.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef7b6.dir/CheckFunctionExists.cxx.o
+/public/software/compiler/gcc/11.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu++11 -o CMakeFiles/cmTC_ef7b6.dir/CheckFunctionExists.cxx.o -c /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_ef7b6
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef7b6.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/c++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_ef7b6.dir/CheckFunctionExists.cxx.o -o cmTC_ef7b6  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_ef7b6] Error 1
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ef7b6/fast] Error 2
+
+
+

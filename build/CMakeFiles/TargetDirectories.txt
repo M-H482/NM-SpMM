@@ -1,0 +1,3 @@
+/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/test_nmspmm.dir
+/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/edit_cache.dir
+/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/rebuild_cache.dir

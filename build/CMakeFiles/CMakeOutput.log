@@ -1,0 +1,1017 @@
+The system is: Linux - 3.10.0-1160.el7.x86_64 - x86_64
+Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \(R\) Cuda compiler driver":
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Jun_13_19:16:58_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.91
+Build cuda_12.2.r12.2/compiler.32965470_0
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler: /public/software/compiler/cuda-12.2/bin/nvcc 
+Build flags: 
+Id flags: --keep;--keep-dir;tmp -v
+
+The output was:
+0
+#$ _NVVM_BRANCH_=nvvm
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/public/software/compiler/cuda-12.2/bin
+#$ _THERE_=/public/software/compiler/cuda-12.2/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_DIR_=targets/x86_64-linux
+#$ TOP=/public/software/compiler/cuda-12.2/bin/..
+#$ NVVMIR_LIBRARY_DIR=/public/software/compiler/cuda-12.2/bin/../nvvm/libdevice
+#$ LD_LIBRARY_PATH=/public/software/compiler/cuda-12.2/bin/../lib:/public/software/compiler/cuda-12.2/lib64:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs:/public/software/compiler/cuda-12.2/nvvm/lib64:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib:/public/software/compiler/gcc/11.2.0/lib64:/public/software/compiler/gcc/11.2.0/lib:/public/software/compiler/gcc/11.2.0/external_libs/lib:/public/software/compiler/cuda-11.8/extras/CUPTI/lib64/:/opt/gridview/pmix/lib:/opt/gridview/slurm/lib:/opt/gridview/slurm/lib64:/opt/gridview/munge/lib
+#$ PATH=/public/software/compiler/cuda-12.2/bin/../nvvm/bin:/public/software/compiler/cuda-12.2/bin:/public/software/compiler/cmake-compiler/3.23.0/bin:/public/software/compiler/cuda-12.2/bin:/public/software/compiler/cuda-12.2/nvvm/bin:/public/software/compiler/cuda-12.2/libnvvp:/public/software/compiler/gcc/11.2.0/bin:/public/software/compiler/cuda-11.8/extras/CUPTI/bin:/public/home/macong/anaconda3/bin:/public/home/macong/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/opt/gridview/pmix/bin:/opt/gridview/pmix/sbin:/public/home/macong/perl5/bin:/usr/local/Modules/bin:/opt/gridview/slurm/bin:/opt/gridview/slurm/sbin:/opt/gridview/munge/bin:/opt/gridview/munge/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/public/home/macong/workspace/wenxizhu/tool/bin/:/public/home/macong/.local/bin:/public/home/macong/bin:/public/home/macong/ngc-cli
+#$ INCLUDES="-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"  
+#$ LIBRARIES=  "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+#$ rm tmp/a_dlink.reg.c
+#$ gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ cudafe++ --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" 
+#$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+#$ nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"
+#$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+#$ gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/public/software/compiler/cuda-12.2/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+#$ g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+
+The CUDA compiler identification is NVIDIA, found in "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/a.out"
+
+Parsed CUDA nvcc implicit link information from above output:
+  found 'PATH=' string: [/public/software/compiler/cuda-12.2/bin/../nvvm/bin:/public/software/compiler/cuda-12.2/bin:/public/software/compiler/cmake-compiler/3.23.0/bin:/public/software/compiler/cuda-12.2/bin:/public/software/compiler/cuda-12.2/nvvm/bin:/public/software/compiler/cuda-12.2/libnvvp:/public/software/compiler/gcc/11.2.0/bin:/public/software/compiler/cuda-11.8/extras/CUPTI/bin:/public/home/macong/anaconda3/bin:/public/home/macong/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/opt/gridview/pmix/bin:/opt/gridview/pmix/sbin:/public/home/macong/perl5/bin:/usr/local/Modules/bin:/opt/gridview/slurm/bin:/opt/gridview/slurm/sbin:/opt/gridview/munge/bin:/opt/gridview/munge/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/public/home/macong/workspace/wenxizhu/tool/bin/:/public/home/macong/.local/bin:/public/home/macong/bin:/public/home/macong/ngc-cli]
+  found 'LIBRARIES=' string: ["-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+  considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/public/software/compiler/cuda-12.2/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+  considering line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/public/software/compiler/gcc/11.2.0/bin/g++]
+
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+    arg [-m64] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs]
+    arg [-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib] ==> dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+  collapse library dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit objs: []
+  implicit dirs: [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  implicit fwks: []
+
+
+Parsed CUDA nvcc include information from above output:
+  found 'PATH=' string: [/public/software/compiler/cuda-12.2/bin/../nvvm/bin:/public/software/compiler/cuda-12.2/bin:/public/software/compiler/cmake-compiler/3.23.0/bin:/public/software/compiler/cuda-12.2/bin:/public/software/compiler/cuda-12.2/nvvm/bin:/public/software/compiler/cuda-12.2/libnvvp:/public/software/compiler/gcc/11.2.0/bin:/public/software/compiler/cuda-11.8/extras/CUPTI/bin:/public/home/macong/anaconda3/bin:/public/home/macong/anaconda3/condabin:/usr/lib64/qt-3.3/bin:/opt/gridview/pmix/bin:/opt/gridview/pmix/sbin:/public/home/macong/perl5/bin:/usr/local/Modules/bin:/opt/gridview/slurm/bin:/opt/gridview/slurm/sbin:/opt/gridview/munge/bin:/opt/gridview/munge/sbin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/public/home/macong/workspace/wenxizhu/tool/bin/:/public/home/macong/.local/bin:/public/home/macong/bin:/public/home/macong/ngc-cli]
+  found 'LIBRARIES=' string: ["-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++17 --gnu_version=110200 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+  considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=91 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/public/software/compiler/cuda-12.2/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+  considering line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/public/software/compiler/gcc/11.2.0/bin/g++]
+  found 'INCLUDES=' string: ["-I/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include"  ]
+
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs" "-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+    arg [-m64] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs]
+    arg [-L/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib] ==> dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+  collapse library dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib/stubs] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/lib] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit objs: []
+  implicit dirs: [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  implicit fwks: []
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /public/software/compiler/gcc/11.2.0/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/3.23.0-rc3/CompilerIdCXX/a.out"
+
+Detecting CUDA compiler ABI info compiled with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f9188/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f9188.dir/build.make CMakeFiles/cmTC_f9188.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o
+/public/software/compiler/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_52,code=[compute_52,sm_52]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o
+Using built-in specs.
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=2 -D __CUDACC_VER_BUILD__=91 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=2 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/cuda-12.2/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/local/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.'
+Using built-in specs.
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=2 -D __CUDACC_VER_BUILD__=91 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=2 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/cuda-12.2/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/local/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.'
+Using built-in specs.
+COLLECT_GCC=gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9188.dir/'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_0000317c_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_f9188.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -o /tmp/ccvmPKg4.s
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/cuda-12.2/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/local/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2b1a7204c494844a99813ca5839d2962
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9188.dir/'
+ as -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o /tmp/ccvmPKg4.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.'
+Linking CUDA executable cmTC_f9188
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9188.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/g++  -v CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o -o cmTC_f9188  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs" -L"/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib"
+Using built-in specs.
+COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/g++
+COLLECT_LTO_WRAPPER=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9188' '-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs' '-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f9188.'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3UWCR9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f9188 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc -L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib/../lib64 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/cuda-12.2/lib64 -L/public/software/compiler/cuda-12.2/nvvm/lib64 -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/lib64 -L/public/software/compiler/gcc/11.2.0/lib -L/public/software/compiler/gcc/11.2.0/external_libs/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9188' '-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs' '-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f9188.'
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CUDA implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include]
+    add: [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+    add: [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+    add: [/usr/local/include]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/include]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0] ==> [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu] ==> [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward] ==> [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/backward]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include] ==> [/public/software/compiler/gcc/11.2.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/public/software/compiler/cuda-12.2/targets/x86_64-linux/include;/public/software/compiler/gcc/11.2.0/include/c++/11.2.0;/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu;/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/backward;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed;/usr/local/include;/public/software/compiler/gcc/11.2.0/include;/usr/include]
+
+
+Parsed CUDA implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f9188/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f9188.dir/build.make CMakeFiles/cmTC_f9188.dir/build]
+  ignore line: [gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CUDA object CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [/public/software/compiler/cuda-12.2/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_52 code=[compute_52 sm_52]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/']
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=2 -D __CUDACC_VER_BUILD__=91 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=2 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/cuda-12.2/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_0000317c_00000000-7_CMakeCUDACompilerABI.cpp1.']
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/']
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -E -quiet -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=2 -D __CUDACC_VER_BUILD__=91 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=2 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/cuda-12.2/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=2' '-D' '__CUDACC_VER_BUILD__=91' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=2' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_0000317c_00000000-5_CMakeCUDACompilerABI.cpp4.']
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9188.dir/']
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_0000317c_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_f9188.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -o /tmp/ccvmPKg4.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/cuda-12.2/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2b1a7204c494844a99813ca5839d2962]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9188.dir/']
+  ignore line: [ as -v -I /public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o /tmp/ccvmPKg4.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/public/software/compiler/cuda-12.2/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.']
+  ignore line: [Linking CUDA executable cmTC_f9188]
+  ignore line: [/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9188.dir/link.txt --verbose=1]
+  ignore line: [/public/software/compiler/gcc/11.2.0/bin/g++  -v CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o -o cmTC_f9188  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs" -L"/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib"]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9188' '-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs' '-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f9188.']
+  link line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3UWCR9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f9188 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc -L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib/../lib64 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/cuda-12.2/lib64 -L/public/software/compiler/cuda-12.2/nvvm/lib64 -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/lib64 -L/public/software/compiler/gcc/11.2.0/lib -L/public/software/compiler/gcc/11.2.0/external_libs/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3UWCR9.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f9188] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc]
+    arg [-L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64] ==> dir [/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib64/../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib64/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib/../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/public/software/compiler/cuda-12.2/lib64] ==> dir [/public/software/compiler/cuda-12.2/lib64]
+    arg [-L/public/software/compiler/cuda-12.2/nvvm/lib64] ==> dir [/public/software/compiler/cuda-12.2/nvvm/lib64]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib] ==> dir [/public/software/compiler/gcc/11.2.0/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/external_libs/lib] ==> dir [/public/software/compiler/gcc/11.2.0/external_libs/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_f9188.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+  collapse obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc]
+  collapse library dir [/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64] ==> [/public/software/compiler/cuda-12.2/nvvm/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib64/../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib/../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/lib64] ==> [/public/software/compiler/cuda-12.2/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/nvvm/lib64] ==> [/public/software/compiler/cuda-12.2/nvvm/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib] ==> [/public/software/compiler/gcc/11.2.0/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/external_libs/lib] ==> [/public/software/compiler/gcc/11.2.0/external_libs/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> [/public/software/compiler/gcc/11.2.0/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0;/public/software/compiler/gcc/11.2.0/lib/gcc;/public/software/compiler/cuda-12.2/nvvm/lib64;/public/software/compiler/gcc/11.2.0/lib64;/lib64;/usr/lib64;/public/software/compiler/cuda-12.2/lib64;/public/software/compiler/gcc/11.2.0/lib;/public/software/compiler/gcc/11.2.0/external_libs/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66c51/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66c51.dir/build.make CMakeFiles/cmTC_66c51.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o
+/public/software/compiler/gcc/11.2.0/bin/c++   -v -o CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o -c /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_66c51.dir/'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_66c51.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccWr7g25.s
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /public/software/compiler/cuda-12.2/include
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/local/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2b1a7204c494844a99813ca5839d2962
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_66c51.dir/'
+ as -v --64 -o CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWr7g25.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_66c51
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66c51.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/c++  -v CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_66c51 
+Using built-in specs.
+COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++
+COLLECT_LTO_WRAPPER=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_66c51' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_66c51.'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz7OB98.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_66c51 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc -L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib/../lib64 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/cuda-12.2/lib64 -L/public/software/compiler/cuda-12.2/nvvm/lib64 -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/lib64 -L/public/software/compiler/gcc/11.2.0/lib -L/public/software/compiler/gcc/11.2.0/external_libs/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_66c51' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_66c51.'
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/public/software/compiler/cuda-12.2/include]
+    add: [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+    add: [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+    add: [/usr/local/include]
+    add: [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/public/software/compiler/cuda-12.2/include] ==> [/public/software/compiler/cuda-12.2/include]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0] ==> [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu] ==> [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward] ==> [/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/backward]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include] ==> [/public/software/compiler/gcc/11.2.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/public/software/compiler/cuda-12.2/include;/public/software/compiler/gcc/11.2.0/include/c++/11.2.0;/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu;/public/software/compiler/gcc/11.2.0/include/c++/11.2.0/backward;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed;/usr/local/include;/public/software/compiler/gcc/11.2.0/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66c51/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66c51.dir/build.make CMakeFiles/cmTC_66c51.dir/build]
+  ignore line: [gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/public/software/compiler/gcc/11.2.0/bin/c++   -v -o CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o -c /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_66c51.dir/']
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE /public/software/compiler/cmake-compiler/3.23.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_66c51.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccWr7g25.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /public/software/compiler/cuda-12.2/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2b1a7204c494844a99813ca5839d2962]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_66c51.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccWr7g25.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_66c51]
+  ignore line: [/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66c51.dir/link.txt --verbose=1]
+  ignore line: [/public/software/compiler/gcc/11.2.0/bin/c++  -v CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_66c51 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_66c51' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_66c51.']
+  link line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz7OB98.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_66c51 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc -L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib/../lib64 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/cuda-12.2/lib64 -L/public/software/compiler/cuda-12.2/nvvm/lib64 -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/lib64 -L/public/software/compiler/gcc/11.2.0/lib -L/public/software/compiler/gcc/11.2.0/external_libs/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccz7OB98.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_66c51] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc]
+    arg [-L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64] ==> dir [/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib64/../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib64/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib/../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/public/software/compiler/cuda-12.2/lib64] ==> dir [/public/software/compiler/cuda-12.2/lib64]
+    arg [-L/public/software/compiler/cuda-12.2/nvvm/lib64] ==> dir [/public/software/compiler/cuda-12.2/nvvm/lib64]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib] ==> dir [/public/software/compiler/gcc/11.2.0/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/external_libs/lib] ==> dir [/public/software/compiler/gcc/11.2.0/external_libs/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_66c51.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+  collapse obj [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc]
+  collapse library dir [/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64] ==> [/public/software/compiler/cuda-12.2/nvvm/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib64/../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib/../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/lib64] ==> [/public/software/compiler/cuda-12.2/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/nvvm/lib64] ==> [/public/software/compiler/cuda-12.2/nvvm/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib] ==> [/public/software/compiler/gcc/11.2.0/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/external_libs/lib] ==> [/public/software/compiler/gcc/11.2.0/external_libs/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> [/public/software/compiler/gcc/11.2.0/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o;/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0;/public/software/compiler/gcc/11.2.0/lib/gcc;/public/software/compiler/cuda-12.2/nvvm/lib64;/public/software/compiler/gcc/11.2.0/lib64;/lib64;/usr/lib64;/public/software/compiler/cuda-12.2/lib64;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib;/public/software/compiler/gcc/11.2.0/lib;/public/software/compiler/gcc/11.2.0/external_libs/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f8f27/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f8f27.dir/build.make CMakeFiles/cmTC_f8f27.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f8f27.dir/CheckIncludeFile.cxx.o
+/public/software/compiler/gcc/11.2.0/bin/c++   -std=gnu++11 -o CMakeFiles/cmTC_f8f27.dir/CheckIncludeFile.cxx.o -c /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f8f27
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8f27.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/c++ CMakeFiles/cmTC_f8f27.dir/CheckIncludeFile.cxx.o -o cmTC_f8f27 
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_95350/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_95350.dir/build.make CMakeFiles/cmTC_95350.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_95350.dir/CheckFunctionExists.cxx.o
+/public/software/compiler/gcc/11.2.0/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu++11 -o CMakeFiles/cmTC_95350.dir/CheckFunctionExists.cxx.o -c /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_95350
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95350.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/c++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_95350.dir/CheckFunctionExists.cxx.o -o cmTC_95350  -lpthread 
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX OpenMP compiler ABI info compiled with the following output:
+Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9b80/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c9b80.dir/build.make CMakeFiles/cmTC_c9b80.dir/build
+gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o
+/public/software/compiler/gcc/11.2.0/bin/c++   -fopenmp -v -std=gnu++11 -o CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o -c /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c9b80.dir/'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D_REENTRANT /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_c9b80.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++11 -version -fopenmp -o /tmp/cc2dMgEE.s
+GNU C++11 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"
+ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"
+ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /public/software/compiler/cuda-12.2/include
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0
+ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/local/include
+ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++11 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2b1a7204c494844a99813ca5839d2962
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c9b80.dir/'
+ as -v --64 -o CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o /tmp/cc2dMgEE.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.'
+Linking CXX executable cmTC_c9b80
+/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9b80.dir/link.txt --verbose=1
+/public/software/compiler/gcc/11.2.0/bin/c++  -fopenmp -v CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o -o cmTC_c9b80  -v 
+Using built-in specs.
+COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++
+COLLECT_LTO_WRAPPER=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/
+LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+Reading specs from /public/software/compiler/gcc/11.2.0/lib64/../lib64/libgomp.spec
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_c9b80' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_c9b80.'
+ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBd5yyG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c9b80 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc -L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib/../lib64 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/cuda-12.2/lib64 -L/public/software/compiler/cuda-12.2/nvvm/lib64 -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/lib64 -L/public/software/compiler/gcc/11.2.0/lib -L/public/software/compiler/gcc/11.2.0/external_libs/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_c9b80' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_c9b80.'
+gmake[1]: Leaving directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9b80/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c9b80.dir/build.make CMakeFiles/cmTC_c9b80.dir/build]
+  ignore line: [gmake[1]: Entering directory `/public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/public/software/compiler/gcc/11.2.0/bin/c++   -fopenmp -v -std=gnu++11 -o CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o -c /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c9b80.dir/']
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/ -D_GNU_SOURCE -D_REENTRANT /public/home/macong/pruning/my_code/vector_wise/NM-SpMM/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_c9b80.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++11 -version -fopenmp -o /tmp/cc2dMgEE.s]
+  ignore line: [GNU C++11 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring duplicate directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /public/software/compiler/cuda-12.2/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++11 (GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2b1a7204c494844a99813ca5839d2962]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c9b80.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o /tmp/cc2dMgEE.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-std=gnu++11' '-o' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.']
+  ignore line: [Linking CXX executable cmTC_c9b80]
+  ignore line: [/public/software/compiler/cmake-compiler/3.23.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9b80.dir/link.txt --verbose=1]
+  ignore line: [/public/software/compiler/gcc/11.2.0/bin/c++  -fopenmp -v CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o -o cmTC_c9b80  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/public/software/compiler/gcc/11.2.0/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/public/home/jtmeng/software/gcc-11.2.0/install --with-isl=/public/home/jtmeng/software/gcc-11.2.0/isl-0.24/install --with-gmp=/public/home/jtmeng/software/gcc-11.2.0/gmp-6.2.1/install --with-mpfr=/public/home/jtmeng/software/gcc-11.2.0/mpfr-4.1.0/install --with-mpc=/public/home/jtmeng/software/gcc-11.2.0/mpc-1.2.1/install --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/:/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib64/../lib64/:/public/software/compiler/gcc/11.2.0/lib/../lib64/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/cuda-12.2/lib64/:/public/software/compiler/cuda-12.2/nvvm/lib64/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs/:/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/:/public/software/compiler/gcc/11.2.0/lib64/:/public/software/compiler/gcc/11.2.0/lib/:/public/software/compiler/gcc/11.2.0/external_libs/lib/:/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /public/software/compiler/gcc/11.2.0/lib64/../lib64/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_c9b80' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_c9b80.']
+  link line: [ /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBd5yyG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c9b80 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc -L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib64/../lib64 -L/public/software/compiler/gcc/11.2.0/lib/../lib64 -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/cuda-12.2/lib64 -L/public/software/compiler/cuda-12.2/nvvm/lib64 -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs -L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib -L/public/software/compiler/gcc/11.2.0/lib64 -L/public/software/compiler/gcc/11.2.0/lib -L/public/software/compiler/gcc/11.2.0/external_libs/lib -L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/public/software/compiler/gcc/11.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccBd5yyG.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c9b80] ==> ignore
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc]
+    arg [-L/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64] ==> dir [/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib64/../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib64/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib/../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib/../lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/public/software/compiler/cuda-12.2/lib64] ==> dir [/public/software/compiler/cuda-12.2/lib64]
+    arg [-L/public/software/compiler/cuda-12.2/nvvm/lib64] ==> dir [/public/software/compiler/cuda-12.2/nvvm/lib64]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+    arg [-L/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib64] ==> dir [/public/software/compiler/gcc/11.2.0/lib64]
+    arg [-L/public/software/compiler/gcc/11.2.0/lib] ==> dir [/public/software/compiler/gcc/11.2.0/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/external_libs/lib] ==> dir [/public/software/compiler/gcc/11.2.0/external_libs/lib]
+    arg [-L/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_c9b80.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc] ==> [/public/software/compiler/gcc/11.2.0/lib/gcc]
+  collapse library dir [/public/software/compiler/cuda-12.2/nvvm/lib64/../lib64] ==> [/public/software/compiler/cuda-12.2/nvvm/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib64/../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib/../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/lib64] ==> [/public/software/compiler/cuda-12.2/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/nvvm/lib64] ==> [/public/software/compiler/cuda-12.2/nvvm/lib64]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs]
+  collapse library dir [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib] ==> [/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib64] ==> [/public/software/compiler/gcc/11.2.0/lib64]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/lib] ==> [/public/software/compiler/gcc/11.2.0/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/external_libs/lib] ==> [/public/software/compiler/gcc/11.2.0/external_libs/lib]
+  collapse library dir [/public/software/compiler/gcc/11.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> [/public/software/compiler/gcc/11.2.0/lib]
+  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: []
+  implicit dirs: [/public/software/compiler/gcc/11.2.0/lib/gcc/x86_64-pc-linux-gnu/11.2.0;/public/software/compiler/gcc/11.2.0/lib/gcc;/public/software/compiler/cuda-12.2/nvvm/lib64;/public/software/compiler/gcc/11.2.0/lib64;/lib64;/usr/lib64;/public/software/compiler/cuda-12.2/lib64;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib/stubs;/public/software/compiler/cuda-12.2/targets/x86_64-linux/lib;/public/software/compiler/gcc/11.2.0/lib;/public/software/compiler/gcc/11.2.0/external_libs/lib]
+  implicit fwks: []
+
+
