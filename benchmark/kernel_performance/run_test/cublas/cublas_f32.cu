@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
         m = std::atoi(argv[1]);
         n = std::atoi(argv[2]);
         k = std::atoi(argv[3]);
-    } else if (argc == 5) {
+    } else if (argc == 6) {
         m = std::atoi(argv[1]);
         n = std::atoi(argv[2]);
         k = std::atoi(argv[3]);
