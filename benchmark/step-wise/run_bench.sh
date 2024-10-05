@@ -43,10 +43,10 @@ exe_v4H=./v4_prefetch_high_sparsity
 m=4096; n=4096; k=4096; 
 echo "sparsity = 0%"
 s=0; scale=1;
-tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
-tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v2_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
 echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v3L  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
@@ -56,10 +56,10 @@ echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 
 echo "sparsity = 50.0%"
 s=0.5; scale=2;
-tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
-tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v2_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
 echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v3L  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
@@ -69,10 +69,10 @@ echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 
 echo "sparsity = 62.5%"
 s=0.625; scale=2.666666;
-tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
-tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v2_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
 echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v3L  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
@@ -82,10 +82,10 @@ echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 
 echo "sparsity = 75%"
 s=0.75; scale=4;
-tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
-tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v0_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v1_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v2_  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
 echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v3H  $m $n $k 32 $s 100 100 | grep TFLOPS | cut -d ' ' -f 5)
@@ -95,10 +95,10 @@ echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 
 echo "sparsity = 87.5%"
 s=0.875; scale=8;
-tflops=$($exe_v0_  $m $n $k 32 $s 300 300 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
-tflops=$($exe_v1_  $m $n $k 32 $s 300 300 | grep TFLOPS | cut -d ' ' -f 5)
-echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v0_  $m $n $k 32 $s 300 300 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
+# tflops=$($exe_v1_  $m $n $k 32 $s 300 300 | grep TFLOPS | cut -d ' ' -f 5)
+# echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v2_  $m $n $k 32 $s 300 300 | grep TFLOPS | cut -d ' ' -f 5)
 echo "scale=6; 100 * $tflops / $peak / $scale" | bc
 tflops=$($exe_v3H  $m $n $k 32 $s 300 300 | grep TFLOPS | cut -d ' ' -f 5)
