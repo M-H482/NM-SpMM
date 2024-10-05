@@ -1,4 +1,12 @@
-# plot step-wise performance analysis figure
-# output file: step-wise_performance_analysis.pdf
-
-bash plot.sh 
+Perform step-wise performance analysis on A100.
+```
+bash ./run_bench.sh -a sm_80
+```
+Perform step-wise performance analysis on 3090.
+```
+bash ./run_bench.sh -a sm_86
+```
+Perform step-wise performance analysis on 4090.
+```
+bash ./run_bench.sh -a sm_89
+```

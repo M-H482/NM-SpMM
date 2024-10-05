@@ -166,6 +166,10 @@ void nmspmm(float* A, float* B, int* D, float* C, int M, int N, int K, int W, fl
         const int Ws = 4;
         nmGEMM<Ms, Ns, Ks, Ws>
             <<<dimGrid, dimBlock>>>(A, B, D, C, M, N, K, W);
+    } else if (fabs(sparsity - 0.0f) < 1e-6) {
+        const int Ws = 32;
+        nmGEMM<Ms, Ns, Ks, Ws>
+            <<<dimGrid, dimBlock>>>(A, B, D, C, M, N, K, W);
     }
 }
 
