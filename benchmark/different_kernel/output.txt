@@ -1,0 +1,1152 @@
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.018780 ms, 14.293566 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.017398 ms, 15.429312 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.018514 ms, 14.499115 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.023276 ms, 11.532951 TFLOPS
+MAX_TFLOPS: 15.429312
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.017797 ms, 15.083084 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.020859 ms, 12.869123 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.020265 ms, 13.246286 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.024136 ms, 11.121934 TFLOPS
+MAX_TFLOPS: 15.083084
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.030351 ms, 8.844265 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.023726 ms, 11.313941 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.027064 ms, 9.918426 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.030853 ms, 8.700432 TFLOPS
+MAX_TFLOPS: 11.313941
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.030495 ms, 8.802686 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.022927 ms, 11.708084 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.029522 ms, 9.092751 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.033485 ms, 8.016636 TFLOPS
+MAX_TFLOPS: 11.708084
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.047729 ms, 22.496803 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.044093 ms, 24.351509 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.046305 ms, 23.188324 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.051794 ms, 20.731041 TFLOPS
+MAX_TFLOPS: 24.351509
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.056730 ms, 18.927364 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.049377 ms, 21.745667 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.052808 ms, 20.333063 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.055460 ms, 19.360710 TFLOPS
+MAX_TFLOPS: 21.745667
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.056596 ms, 18.971884 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.064635 ms, 16.612421 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.059853 ms, 17.939709 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.070103 ms, 15.316623 TFLOPS
+MAX_TFLOPS: 18.971884
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.056095 ms, 19.141586 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.067471 ms, 15.914038 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.064993 ms, 16.520811 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.072274 ms, 14.856559 TFLOPS
+MAX_TFLOPS: 19.141586
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.146166 ms, 29.384224 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.149258 ms, 28.775412 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.146022 ms, 29.413073 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.156856 ms, 27.381538 TFLOPS
+MAX_TFLOPS: 29.413073
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.160184 ms, 26.812656 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.167219 ms, 25.684652 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.149340 ms, 28.759626 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.154532 ms, 27.793413 TFLOPS
+MAX_TFLOPS: 28.759626
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.205292 ms, 20.921309 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.169615 ms, 25.321806 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.162171 ms, 26.484207 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.183132 ms, 23.452829 TFLOPS
+MAX_TFLOPS: 26.484207
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.203807 ms, 21.073727 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.170629 ms, 25.171362 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.160870 ms, 26.698307 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.184781 ms, 23.243580 TFLOPS
+MAX_TFLOPS: 26.698307
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.288512 ms, 29.773233 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.282235 ms, 30.435411 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.290038 ms, 29.616610 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.312975 ms, 27.446039 TFLOPS
+MAX_TFLOPS: 30.435411
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.313774 ms, 27.376177 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.277217 ms, 30.986290 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.282788 ms, 30.375898 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.291103 ms, 29.508261 TFLOPS
+MAX_TFLOPS: 30.986290
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.304712 ms, 28.190367 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.284201 ms, 30.224861 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.303514 ms, 28.301645 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.337551 ms, 25.447786 TFLOPS
+MAX_TFLOPS: 30.224861
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.302449 ms, 28.401300 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.281692 ms, 30.494051 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.302848 ms, 28.363850 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.339814 ms, 25.278311 TFLOPS
+MAX_TFLOPS: 30.494051
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.339707 ms, 29.370977 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.254653 ms, 30.478952 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.300395 ms, 29.872896 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.377923 ms, 28.898954 TFLOPS
+MAX_TFLOPS: 30.478952
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.132531 ms, 32.224373 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.098586 ms, 32.745617 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.115410 ms, 32.485184 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.186844 ms, 31.424040 TFLOPS
+MAX_TFLOPS: 32.745617
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.979044 ms, 34.723576 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.985669 ms, 34.607719 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.028564 ms, 33.875916 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.186527 ms, 31.428600 TFLOPS
+MAX_TFLOPS: 34.723576
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.957868 ms, 35.099144 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.953997 ms, 35.168674 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.015232 ms, 34.100037 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.167624 ms, 31.702677 TFLOPS
+MAX_TFLOPS: 35.168674
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 4.719227 ms, 29.123194 TFLOPS
+SPLIT_K = 2
+Time elapsed: 4.478382 ms, 30.689421 TFLOPS
+SPLIT_K = 4
+Time elapsed: 4.605584 ms, 29.841810 TFLOPS
+SPLIT_K = 8
+Time elapsed: 4.814315 ms, 28.547976 TFLOPS
+MAX_TFLOPS: 30.689421
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 4.185825 ms, 32.834373 TFLOPS
+SPLIT_K = 2
+Time elapsed: 4.128737 ms, 33.288376 TFLOPS
+SPLIT_K = 4
+Time elapsed: 4.242555 ms, 32.395325 TFLOPS
+SPLIT_K = 8
+Time elapsed: 4.385976 ms, 31.336000 TFLOPS
+MAX_TFLOPS: 33.288376
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 3.841710 ms, 35.775463 TFLOPS
+SPLIT_K = 2
+Time elapsed: 3.935017 ms, 34.927155 TFLOPS
+SPLIT_K = 4
+Time elapsed: 4.050903 ms, 33.927982 TFLOPS
+SPLIT_K = 8
+Time elapsed: 4.316119 ms, 31.843178 TFLOPS
+MAX_TFLOPS: 35.775463
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.500000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 3.760190 ms, 36.551071 TFLOPS
+SPLIT_K = 2
+Time elapsed: 3.888445 ms, 35.345478 TFLOPS
+SPLIT_K = 4
+Time elapsed: 4.016558 ms, 34.218090 TFLOPS
+SPLIT_K = 8
+Time elapsed: 4.347116 ms, 31.616127 TFLOPS
+MAX_TFLOPS: 36.551071
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.015104 ms, 17.772474 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.014920 ms, 17.992039 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.017111 ms, 15.687851 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.022979 ms, 11.681996 TFLOPS
+MAX_TFLOPS: 17.992039
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.015063 ms, 17.820803 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.018043 ms, 14.877638 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.018207 ms, 14.743756 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.024238 ms, 11.074946 TFLOPS
+MAX_TFLOPS: 17.820803
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.023030 ms, 11.656025 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.020101 ms, 13.354253 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.023173 ms, 11.583915 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.028600 ms, 9.385750 TFLOPS
+MAX_TFLOPS: 13.354253
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.023286 ms, 11.527880 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.019702 ms, 13.624948 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.026112 ms, 10.280156 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.032348 ms, 8.298323 TFLOPS
+MAX_TFLOPS: 13.624948
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.037990 ms, 28.263502 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.037151 ms, 28.902317 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.039188 ms, 27.399424 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.047401 ms, 22.652321 TFLOPS
+MAX_TFLOPS: 28.902317
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.045281 ms, 23.712709 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.040079 ms, 26.790394 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.041452 ms, 25.903557 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.050422 ms, 21.295208 TFLOPS
+MAX_TFLOPS: 26.790394
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.043715 ms, 24.562567 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.052429 ms, 20.480001 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.050545 ms, 21.243437 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.062259 ms, 17.246315 TFLOPS
+MAX_TFLOPS: 24.562567
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.043049 ms, 24.942341 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.055296 ms, 19.418074 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.055060 ms, 19.501133 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.065894 ms, 16.294889 TFLOPS
+MAX_TFLOPS: 24.942341
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.117688 ms, 36.494423 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.118968 ms, 36.101772 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.122337 ms, 35.107590 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.127396 ms, 33.713562 TFLOPS
+MAX_TFLOPS: 36.494423
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.125317 ms, 34.272793 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.114862 ms, 37.392387 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.120576 ms, 35.620415 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.129065 ms, 33.277561 TFLOPS
+MAX_TFLOPS: 37.392387
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.157041 ms, 27.349400 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.133908 ms, 32.073902 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.131297 ms, 32.711773 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.152975 ms, 28.076202 TFLOPS
+MAX_TFLOPS: 32.711773
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.156006 ms, 27.530712 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.135516 ms, 31.693398 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.131215 ms, 32.732197 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.154860 ms, 27.734602 TFLOPS
+MAX_TFLOPS: 32.732197
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.223990 ms, 38.349678 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.231465 ms, 37.111168 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.235387 ms, 36.492832 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.250972 ms, 34.226643 TFLOPS
+MAX_TFLOPS: 38.349678
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.203827 ms, 42.143219 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.217620 ms, 39.472084 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.222730 ms, 38.566540 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.245381 ms, 35.006500 TFLOPS
+MAX_TFLOPS: 42.143219
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.232755 ms, 36.905445 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.224061 ms, 38.337410 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.242637 ms, 35.402439 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.278497 ms, 30.843872 TFLOPS
+MAX_TFLOPS: 38.337410
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.230185 ms, 37.317532 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.222853 ms, 38.545273 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.244879 ms, 35.078228 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.284140 ms, 30.231398 TFLOPS
+MAX_TFLOPS: 38.545273
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.846743 ms, 37.211174 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.816965 ms, 37.821018 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.859789 ms, 36.950150 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.969295 ms, 34.895466 TFLOPS
+MAX_TFLOPS: 37.821018
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.583616 ms, 43.394028 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.590733 ms, 43.199890 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.634191 ms, 42.051060 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.770506 ms, 38.813461 TFLOPS
+MAX_TFLOPS: 43.394028
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.531085 ms, 44.882870 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.541018 ms, 44.593571 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.601823 ms, 42.900803 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.753201 ms, 39.196583 TFLOPS
+MAX_TFLOPS: 44.882870
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.481318 ms, 46.390755 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.498092 ms, 45.871346 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.570058 ms, 43.768742 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.754051 ms, 39.177589 TFLOPS
+MAX_TFLOPS: 46.390755
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 3.657964 ms, 37.572533 TFLOPS
+SPLIT_K = 2
+Time elapsed: 3.594772 ms, 38.233006 TFLOPS
+SPLIT_K = 4
+Time elapsed: 3.687752 ms, 37.269035 TFLOPS
+SPLIT_K = 8
+Time elapsed: 3.908905 ms, 35.160473 TFLOPS
+MAX_TFLOPS: 38.233006
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 3.149711 ms, 43.635410 TFLOPS
+SPLIT_K = 2
+Time elapsed: 3.172178 ms, 43.326366 TFLOPS
+SPLIT_K = 4
+Time elapsed: 3.270236 ms, 42.027225 TFLOPS
+SPLIT_K = 8
+Time elapsed: 3.548344 ms, 38.733261 TFLOPS
+MAX_TFLOPS: 43.635410
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.947953 ms, 46.621834 TFLOPS
+SPLIT_K = 2
+Time elapsed: 3.047649 ms, 45.096710 TFLOPS
+SPLIT_K = 4
+Time elapsed: 3.157361 ms, 43.529697 TFLOPS
+SPLIT_K = 8
+Time elapsed: 3.481549 ms, 39.476383 TFLOPS
+MAX_TFLOPS: 46.621834
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.625000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.843638 ms, 48.332088 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.984315 ms, 46.053772 TFLOPS
+SPLIT_K = 4
+Time elapsed: 3.126456 ms, 43.959980 TFLOPS
+SPLIT_K = 8
+Time elapsed: 3.476367 ms, 39.535221 TFLOPS
+MAX_TFLOPS: 48.332088
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.012544 ms, 21.399509 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.012718 ms, 21.106602 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.015811 ms, 16.978237 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.023368 ms, 11.487468 TFLOPS
+MAX_TFLOPS: 21.399509
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.012247 ms, 21.918394 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.015473 ms, 17.349041 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.015575 ms, 17.234978 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.024658 ms, 10.886378 TFLOPS
+MAX_TFLOPS: 21.918394
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.020767 ms, 12.926232 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.019476 ms, 13.782544 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.022385 ms, 11.991948 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.031365 ms, 8.558407 TFLOPS
+MAX_TFLOPS: 13.782544
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.020183 ms, 13.300050 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.018391 ms, 14.595990 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.024218 ms, 11.084312 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.030341 ms, 8.847249 TFLOPS
+MAX_TFLOPS: 14.595990
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.028611 ms, 37.529560 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.030628 ms, 35.057709 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.033116 ms, 32.423504 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.045486 ms, 23.605944 TFLOPS
+MAX_TFLOPS: 37.529560
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.033055 ms, 32.483765 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.031396 ms, 34.200130 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.035543 ms, 30.209623 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.048835 ms, 21.987333 TFLOPS
+MAX_TFLOPS: 34.200130
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.034714 ms, 30.931446 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.043735 ms, 24.551064 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.043909 ms, 24.453732 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.064952 ms, 16.531231 TFLOPS
+MAX_TFLOPS: 30.931446
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.033700 ms, 31.861927 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.046244 ms, 23.219133 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.047616 ms, 22.550020 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.061317 ms, 17.511290 TFLOPS
+MAX_TFLOPS: 31.861927
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.090941 ms, 47.227837 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.086108 ms, 49.878746 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.091331 ms, 47.026619 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.107776 ms, 39.850868 TFLOPS
+MAX_TFLOPS: 49.878746
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.088402 ms, 48.584549 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.086118 ms, 49.872818 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.092211 ms, 46.577499 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.106465 ms, 40.341484 TFLOPS
+MAX_TFLOPS: 49.872818
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.112364 ms, 38.223858 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.100557 ms, 42.711849 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.107919 ms, 39.797932 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.138076 ms, 31.105785 TFLOPS
+MAX_TFLOPS: 42.711849
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.110438 ms, 38.890160 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.101796 ms, 42.191975 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.102820 ms, 41.771774 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.128123 ms, 33.522251 TFLOPS
+MAX_TFLOPS: 42.191975
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.155812 ms, 55.130177 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.163318 ms, 52.596455 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.172339 ms, 49.843189 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.211343 ms, 40.644451 TFLOPS
+MAX_TFLOPS: 55.130177
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.143258 ms, 59.961456 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.160911 ms, 53.383018 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.171336 ms, 50.135117 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.199875 ms, 42.976631 TFLOPS
+MAX_TFLOPS: 59.961456
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.164649 ms, 52.171207 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.172841 ms, 49.698490 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.193300 ms, 44.438251 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.261980 ms, 32.788494 TFLOPS
+MAX_TFLOPS: 52.171207
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.161055 ms, 53.335499 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.166226 ms, 51.676262 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.189450 ms, 45.341373 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.235858 ms, 36.419952 TFLOPS
+MAX_TFLOPS: 53.335499
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.225923 ms, 56.055317 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.249690 ms, 54.989239 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.321626 ms, 51.996170 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.470454 ms, 46.733517 TFLOPS
+MAX_TFLOPS: 56.055317
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.087836 ms, 63.170795 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.138063 ms, 60.382824 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.213583 ms, 56.625263 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.376952 ms, 49.906937 TFLOPS
+MAX_TFLOPS: 63.170795
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.067233 ms, 64.390305 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.126164 ms, 61.020821 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.209846 ms, 56.800194 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.447782 ms, 47.465336 TFLOPS
+MAX_TFLOPS: 64.390305
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.017467 ms, 67.539764 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.054945 ms, 65.140320 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.152614 ms, 59.620529 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.353073 ms, 50.787720 TFLOPS
+MAX_TFLOPS: 67.539764
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.418340 ms, 56.831947 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.496635 ms, 55.049683 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.632786 ms, 52.202858 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.909921 ms, 47.231159 TFLOPS
+MAX_TFLOPS: 56.831947
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.165002 ms, 63.482128 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.247004 ms, 61.165424 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.412616 ms, 56.966782 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.736077 ms, 50.232128 TFLOPS
+MAX_TFLOPS: 63.482128
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 2.084137 ms, 65.945259 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.215905 ms, 62.023842 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.403359 ms, 57.186199 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.864609 ms, 47.978252 TFLOPS
+MAX_TFLOPS: 65.945259
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.750000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.965763 ms, 69.916351 TFLOPS
+SPLIT_K = 2
+Time elapsed: 2.095493 ms, 65.587883 TFLOPS
+SPLIT_K = 4
+Time elapsed: 2.288374 ms, 60.059662 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.700155 ms, 50.900394 TFLOPS
+MAX_TFLOPS: 69.916351
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.009052 ms, 29.654299 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.010650 ms, 25.206154 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.014326 ms, 18.737957 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.022313 ms, 12.030472 TFLOPS
+MAX_TFLOPS: 29.654299
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.008786 ms, 30.552914 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.012677 ms, 21.174797 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.014111 ms, 19.023512 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.022723 ms, 11.813610 TFLOPS
+MAX_TFLOPS: 30.552914
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.012483 ms, 21.504841 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.015012 ms, 17.881582 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.018555 ms, 14.467109 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.030382 ms, 8.835321 TFLOPS
+MAX_TFLOPS: 21.504841
+M = 512, N = 512, K = 512, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.012390 ms, 21.664793 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.014746 ms, 18.204443 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.020787 ms, 12.913496 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.028692 ms, 9.355603 TFLOPS
+MAX_TFLOPS: 21.664793
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.018504 ms, 58.028553 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.021576 ms, 49.766304 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.026788 ms, 40.083179 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.040919 ms, 26.240639 TFLOPS
+MAX_TFLOPS: 58.028553
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.019866 ms, 54.050308 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.022292 ms, 48.166100 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.027484 ms, 39.067661 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.042404 ms, 25.321806 TFLOPS
+MAX_TFLOPS: 54.050308
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.020951 ms, 51.250050 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.030341 ms, 35.388996 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.037263 ms, 28.814949 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.055685 ms, 19.282385 TFLOPS
+MAX_TFLOPS: 51.250050
+M = 512, N = 1024, K = 1024, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.020347 ms, 52.771816 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.033014 ms, 32.524067 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.038881 ms, 27.615908 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.056218 ms, 19.099745 TFLOPS
+MAX_TFLOPS: 52.771816
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.050463 ms, 85.111687 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.057436 ms, 74.778107 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.063826 ms, 67.291901 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.084490 ms, 50.833885 TFLOPS
+MAX_TFLOPS: 85.111687
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.049797 ms, 86.249306 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.056883 ms, 75.505020 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.062136 ms, 69.121681 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.084204 ms, 51.006981 TFLOPS
+MAX_TFLOPS: 86.249306
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.062454 ms, 68.770355 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.067369 ms, 63.752911 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.077199 ms, 55.634750 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.110008 ms, 39.042206 TFLOPS
+MAX_TFLOPS: 68.770355
+M = 512, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.061297 ms, 70.068565 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.065905 ms, 65.169426 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.074844 ms, 57.385471 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.106189 ms, 40.446518 TFLOPS
+MAX_TFLOPS: 70.068565
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.093112 ms, 92.253471 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.102697 ms, 83.643509 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.117791 ms, 72.925392 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.161219 ms, 53.281300 TFLOPS
+MAX_TFLOPS: 92.253471
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.087962 ms, 97.655510 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.096799 ms, 88.740166 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.112353 ms, 76.454681 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.159683 ms, 53.793819 TFLOPS
+MAX_TFLOPS: 97.655510
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.092242 ms, 93.123985 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.110991 ms, 77.392815 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.137841 ms, 62.317863 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.205128 ms, 41.876041 TFLOPS
+MAX_TFLOPS: 93.123985
+M = 1024, N = 2048, K = 2048, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.087808 ms, 97.826332 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.108483 ms, 79.182632 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.133489 ms, 64.349556 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.198287 ms, 43.320637 TFLOPS
+MAX_TFLOPS: 97.826332
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.701809 ms, 97.917686 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.764262 ms, 89.916077 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.838246 ms, 81.980042 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.017416 ms, 67.543167 TFLOPS
+MAX_TFLOPS: 97.917686
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.598108 ms, 114.894730 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.646943 ms, 106.221886 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.717803 ms, 95.735779 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.908902 ms, 75.607101 TFLOPS
+MAX_TFLOPS: 114.894730
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.574740 ms, 119.566101 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.661811 ms, 103.835464 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.761180 ms, 90.280174 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.005056 ms, 68.373779 TFLOPS
+MAX_TFLOPS: 119.566101
+M = 2048, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 0.533883 ms, 128.716400 TFLOPS
+SPLIT_K = 2
+Time elapsed: 0.619356 ms, 110.953087 TFLOPS
+SPLIT_K = 4
+Time elapsed: 0.727480 ms, 94.462318 TFLOPS
+SPLIT_K = 8
+Time elapsed: 0.963195 ms, 71.345352 TFLOPS
+MAX_TFLOPS: 128.716400
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x32_4x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.387551 ms, 99.051483 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.496740 ms, 91.825546 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.658829 ms, 82.853012 TFLOPS
+SPLIT_K = 8
+Time elapsed: 2.034074 ms, 67.568329 TFLOPS
+MAX_TFLOPS: 99.051483
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_32x64_8x4_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.160704 ms, 118.409988 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.265388 ms, 108.614120 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.421578 ms, 96.680550 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.811077 ms, 75.887962 TFLOPS
+MAX_TFLOPS: 118.409988
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x64_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.100011 ms, 124.943199 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.294920 ms, 106.137047 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.493811 ms, 92.005577 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.991936 ms, 68.997673 TFLOPS
+MAX_TFLOPS: 124.943199
+M = 4096, N = 4096, K = 4096, pruning_M = 32, sparsity = 0.875000
+
+**testing kernel_64x128_8x8_low_sparsity:
+SPLIT_K = 1
+Time elapsed: 1.028260 ms, 133.661713 TFLOPS
+SPLIT_K = 2
+Time elapsed: 1.211095 ms, 113.483208 TFLOPS
+SPLIT_K = 4
+Time elapsed: 1.425562 ms, 96.410385 TFLOPS
+SPLIT_K = 8
+Time elapsed: 1.906125 ms, 72.103859 TFLOPS
+MAX_TFLOPS: 133.661713
