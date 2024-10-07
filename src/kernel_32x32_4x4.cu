@@ -269,6 +269,13 @@ void nmGEMM_small_matrices_low_sparsity(float* A, float* B, int* D, float* C, in
             + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
         kernel_32x32_4x4_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
             <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, C, M, N, K, W);
+    } else if (fabs(sparsity - 0.0f) < 1e-6) {
+        const int Ks = 32; 
+        const int Ws = 32; 
+        size_t smem_nbytes = 2 * (Ks * Ms + Ws * Ns) * sizeof(float)
+            + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
+        kernel_32x32_4x4_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt> 
+            <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, C, M, N, K, W); 
     }
 }
 

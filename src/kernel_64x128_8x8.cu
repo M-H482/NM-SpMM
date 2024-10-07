@@ -9,7 +9,7 @@ template <
     const int Ws,
     const int Mt,
     const int Nt>
-__global__ void kernel_32x32_4x4_low_sparsity(float* A, float* B, int* D, float* C, int M, int N, int K, int W)
+__global__ void kernel_64x128_8x8_low_sparsity(float* A, float* B, int* D, float* C, int M, int N, int K, int W)
 {
     /*
      *    A, B, D, C: col-major, row-major, row-major, row-major
@@ -268,16 +268,25 @@ void nmGEMM_huge_matrices_low_sparsity(float* A, float* B, int* D, float* C, int
         const int Ws = 16;
         size_t smem_nbytes = 2 * (Ks * Ms + Ws * Ns) * sizeof(float)
             + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
-        kernel_32x32_4x4_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
+        kernel_64x128_8x8_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
             <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, C, M, N, K, W);
     } else if (fabs(sparsity - 0.625f) < 1e-6) {
         const int Ks = 32;
         const int Ws = 12;
         size_t smem_nbytes = 2 * (Ks * Ms + Ws * Ns) * sizeof(float)
             + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
-        kernel_32x32_4x4_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
+        kernel_64x128_8x8_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
             <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, C, M, N, K, W);
-    }
+    } else if (fabs(sparsity - 0.0f) < 1e-6) {
+        const int Ks = 32; 
+        const int Ws = 32; 
+        size_t smem_nbytes = 2 * (Ks * Ms + Ws * Ns) * sizeof(float)
+            + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
+        cudaFuncSetAttribute(kernel_64x128_8x8_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>,
+            cudaFuncAttributeMaxDynamicSharedMemorySize, smem_nbytes);
+        kernel_64x128_8x8_low_sparsity<Ms, Ns, Ks, Ws, Mt, Nt> 
+            <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, C, M, N, K, W); 
+    } 
 }
 
 template <
@@ -287,7 +296,7 @@ template <
     const int Ws,
     const int Mt,
     const int Nt>
-__global__ void kernel_32x32_4x4_high_sparsity(float* A, float* B, int* D, int* column_info, float* C, int M, int N, int K, int W)
+__global__ void kernel_64x128_8x8_high_sparsity(float* A, float* B, int* D, int* column_info, float* C, int M, int N, int K, int W)
 {
     /*
      *    A, B, D, C: col-major, row-major, row-major, row-major
@@ -579,16 +588,16 @@ void nmGEMM_huge_matrices_high_sparsity(float* A, float* B, int* D, int* column_
         const int Ws = 16;
         size_t smem_nbytes = 2 * (Ks * Ms + Ws * Ns) * sizeof(float)
             + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
-        cudaFuncSetAttribute(kernel_32x32_4x4_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>, cudaFuncAttributeMaxDynamicSharedMemorySize, smem_nbytes);
-        kernel_32x32_4x4_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
+        cudaFuncSetAttribute(kernel_64x128_8x8_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>, cudaFuncAttributeMaxDynamicSharedMemorySize, smem_nbytes);
+        kernel_64x128_8x8_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
             <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, column_info, C, M, N, K, W);
     } else if (fabs(sparsity - 0.875f) < 1e-6) {
         const int Ks = 64;
         const int Ws = 8;
         size_t smem_nbytes = 2 * (Ks * Ms + Ws * Ns) * sizeof(float)
             + 2 * (Ws * Ns / VEC_LEN + Ks) * sizeof(int);
-        cudaFuncSetAttribute(kernel_32x32_4x4_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>, cudaFuncAttributeMaxDynamicSharedMemorySize, smem_nbytes);
-        kernel_32x32_4x4_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
+        cudaFuncSetAttribute(kernel_64x128_8x8_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>, cudaFuncAttributeMaxDynamicSharedMemorySize, smem_nbytes);
+        kernel_64x128_8x8_high_sparsity<Ms, Ns, Ks, Ws, Mt, Nt>
             <<<dimGrid, dimBlock, smem_nbytes>>>(A, B, D, column_info, C, M, N, K, W);
     }
 }

@@ -192,7 +192,7 @@ int main(int argc, char** argv)
     }
     printf("M = %d, N = %d, K = %d, pruning_M = %d, sparsity = %f, SPLIT_K = %d\n", M, N, K, pruning_M, sparsity, SPLIT_K);
 
-    if (!(fabs(sparsity - 0.5f) < 1e-6 || fabs(sparsity - 0.625f) < 1e-6 || fabs(sparsity - 0.75f) < 1e-6 || fabs(sparsity - 0.875f) < 1e-6)) {
+    if (!(fabs(sparsity - 0.0f) < 1e-6 || fabs(sparsity - 0.5f) < 1e-6 || fabs(sparsity - 0.625f) < 1e-6 || fabs(sparsity - 0.75f) < 1e-6 || fabs(sparsity - 0.875f) < 1e-6)) {
         printf("sparsity not in {0.5, 0.625, 0.75, 0.875}!!!\n");
         return -2;
     }
