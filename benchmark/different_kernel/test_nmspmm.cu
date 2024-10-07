@@ -193,7 +193,7 @@ int main(int argc, char** argv)
     }
     printf("M = %d, N = %d, K = %d, pruning_M = %d, sparsity = %f\n", M, N, K, pruning_M, sparsity);
 
-    if (!(fabs(sparsity - 0.5f) < 1e-6 || fabs(sparsity - 0.625f) < 1e-6 || fabs(sparsity - 0.75f) < 1e-6 || fabs(sparsity - 0.875f) < 1e-6)) {
+    if (!(fabs(sparsity - 0.0f) < 1e-6 || fabs(sparsity - 0.5f) < 1e-6 || fabs(sparsity - 0.625f) < 1e-6 || fabs(sparsity - 0.75f) < 1e-6 || fabs(sparsity - 0.875f) < 1e-6)) {
         printf("sparsity not in {0.5, 0.625, 0.75, 0.875}!!!\n");
         return -2;
     }
@@ -208,7 +208,7 @@ int main(int argc, char** argv)
     float max_tflops = 0.0f;
 
     if (type == 1) {
-        printf("\n**testing kernel_32x32_4x4_low_sparsity:\n");
+        printf("**testing kernel_32x32_4x4_low_sparsity:\n");
         low_sparsity_kernel = &nmGEMM_small_matrices_low_sparsity;
         high_sparsity_kernel = &nmGEMM_small_matrices_high_sparsity;
         int Ns = 32;
@@ -219,7 +219,7 @@ int main(int argc, char** argv)
         }
 
     } else if (type == 2) {
-        printf("\n**testing kernel_32x64_8x4_low_sparsity:\n");
+        printf("**testing kernel_32x64_8x4_low_sparsity:\n");
         low_sparsity_kernel = &nmGEMM_medium_matrices_low_sparsity;
         high_sparsity_kernel = &nmGEMM_medium_matrices_high_sparsity;
         int Ns = 64;
@@ -229,7 +229,7 @@ int main(int argc, char** argv)
             max_tflops = std::max(r, max_tflops);
         }
     } else if (type == 3) {
-        printf("\n**testing kernel_64x64_8x8_low_sparsity:\n");
+        printf("**testing kernel_64x64_8x8_low_sparsity:\n");
         low_sparsity_kernel = &nmGEMM_large_matrices_low_sparsity;
         high_sparsity_kernel = &nmGEMM_large_matrices_high_sparsity;
         int Ns = 64;
@@ -238,8 +238,8 @@ int main(int argc, char** argv)
             float r = test_performance(low_sparsity_kernel, high_sparsity_kernel, Ns, M, N, K, pruning_M, sparsity, SPLIT_K, warm_up, iter);
             max_tflops = std::max(r, max_tflops);
         }
-    } else if (type == 3) {
-        printf("\n**testing kernel_64x128_8x8_low_sparsity:\n");
+    } else if (type == 4) {
+        printf("**testing kernel_64x128_8x8_low_sparsity:\n");
         low_sparsity_kernel = &nmGEMM_huge_matrices_low_sparsity;
         high_sparsity_kernel = &nmGEMM_huge_matrices_high_sparsity;
         int Ns = 128;
@@ -250,6 +250,6 @@ int main(int argc, char** argv)
         }
     }
 
-    printf("MAX_TFLOPS: %f\n", max_tflops);
+    printf("MAX_TFLOPS: %f\n\n", max_tflops);
     return 0;
 }
