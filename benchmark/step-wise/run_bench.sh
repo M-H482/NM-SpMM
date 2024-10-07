@@ -15,13 +15,16 @@ done
 # Select the measured TFLOPS for cuBLAS FP32 dense GEMM.
 case $arch in
   sm_80)
-    peak=19
+    #peak=19
+    peak=19.5
     ;;
   sm_86)
-    peak=24.5
+    #peak=24.5
+    peak=35.6
     ;;
   sm_89)
-    peak=56
+    #peak=56
+    peak=82.6
     ;;
   *)
     echo "Unsupported architecture: $arch" >&2
