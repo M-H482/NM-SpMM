@@ -6,6 +6,8 @@
 
 module load cuda/cuda_12.2/12.2
 
+make
+
 executable="./test_nmspmm"
 raw_output="./output.txt"
 >$raw_output
